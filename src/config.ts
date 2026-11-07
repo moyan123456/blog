@@ -1,5 +1,5 @@
 export const SITE = {
-  website: "https://moyan123456.github.io/",
+  website: "https://tmoyan.us.ci/",
   author: "moyan",
   profile: process.env.PUBLIC_SOCIAL_GITHUB ?? "", // set in .env
   desc: "代码是生命",
