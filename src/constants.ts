@@ -31,25 +31,25 @@ export const SOCIALS: Social[] = (
     {
       name: "GitHub",
       href: PUBLIC_SOCIAL_GITHUB ?? "",
-      linkTitle: `${SITE.title} on GitHub`,
+      linkTitle: `${SITE.title} 的 GitHub`,
       icon: IconGitHub,
     },
     {
       name: "X",
       href: PUBLIC_SOCIAL_X ?? "",
-      linkTitle: `${SITE.title} on X`,
+      linkTitle: `${SITE.title} 的 X`,
       icon: IconBrandX,
     },
     {
       name: "LinkedIn",
       href: PUBLIC_SOCIAL_LINKEDIN ?? "",
-      linkTitle: `${SITE.title} on LinkedIn`,
+      linkTitle: `${SITE.title} 的 LinkedIn`,
       icon: IconLinkedin,
     },
     {
       name: "Mail",
       href: PUBLIC_SOCIAL_EMAIL ? `mailto:${PUBLIC_SOCIAL_EMAIL}` : "",
-      linkTitle: `Send an email to ${SITE.title}`,
+      linkTitle: `给 ${SITE.title} 发邮件`,
       icon: IconMail,
     },
   ] satisfies Social[]
@@ -62,37 +62,37 @@ export const SHARE_LINKS: Social[] = [
   {
     name: "WhatsApp",
     href: "https://wa.me/?text=",
-    linkTitle: "Share this post via WhatsApp",
+    linkTitle: "分享到 WhatsApp",
     icon: IconWhatsapp,
   },
   {
     name: "Facebook",
     href: "https://www.facebook.com/sharer.php?u=",
-    linkTitle: "Share this post on Facebook",
+    linkTitle: "分享到 Facebook",
     icon: IconFacebook,
   },
   {
     name: "X",
     href: "https://x.com/intent/post?url=",
-    linkTitle: "Share this post on X",
+    linkTitle: "分享到 X",
     icon: IconBrandX,
   },
   {
     name: "Telegram",
     href: "https://t.me/share/url?url=",
-    linkTitle: "Share this post via Telegram",
+    linkTitle: "分享到 Telegram",
     icon: IconTelegram,
   },
   {
     name: "Pinterest",
     href: "https://pinterest.com/pin/create/button/?url=",
-    linkTitle: "Share this post on Pinterest",
+    linkTitle: "分享到 Pinterest",
     icon: IconPinterest,
   },
   {
     name: "Mail",
     href: "mailto:?subject=See%20this%20post&body=",
-    linkTitle: "Share this post via email",
+    linkTitle: "通过邮件分享",
     icon: IconMail,
   },
 ] as const;
