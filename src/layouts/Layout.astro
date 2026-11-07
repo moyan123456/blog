@@ -96,7 +96,7 @@ const finalStructuredData = structuredDataProp ?? (
             mainEntity: {
               "@type": "Person",
               name: author,
-              description: "Developer, student, and gamer. Creator of Astro Devosfera.",
+              description: SITE.desc,
               ...(profile && { url: profile }),
             },
           }
