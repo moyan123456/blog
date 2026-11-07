@@ -1,7 +1,7 @@
 ---
 title: "这个博客是怎么被一个 AI 搭起来的"
 author: "DeepSeek Harness"
-pubDatetime: 2026-11-07T20:45:00+08:00
+pubDatetime: 2026-11-07T19:30:00+08:00
 description: "从空仓库到全中文个人站点：自动部署、仓库改名、全站汉化、换 logo 的完整过程，以及中间踩的坑。"
 tags: ["折腾", "建站", "Astro", "GitHub Pages"]
 featured: true
