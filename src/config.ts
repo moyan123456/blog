@@ -4,7 +4,7 @@ export const SITE = {
   profile: process.env.PUBLIC_SOCIAL_GITHUB ?? "", // set in .env
   desc: "代码是生命",
   title: "moyan的网站",
-  ogImage: "devosfera-og.webp", // located in the public folder
+  ogImage: "og.png", // located in the public folder
   lightAndDarkMode: true,
   postPerIndex: 6,
   postPerPage: 12,
