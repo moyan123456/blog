@@ -33,7 +33,7 @@ const metaTitle = page.currentPage > 1
   : `Posts | ${SITE.title}`;
 
 const metaDesc = page.currentPage > 1
-  ? `Browse articles, guides, and tutorials on Astro Devosfera (Page ${page.currentPage} of ${page.lastPage}).`
+  ? `Browse articles on ${SITE.title} (Page ${page.currentPage} of ${page.lastPage}).`
   : `All the articles I have published.`;
 
 const prevURL = page.url.prev ? new URL(page.url.prev, SITE.website).toString() : undefined;
