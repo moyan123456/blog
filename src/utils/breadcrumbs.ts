@@ -30,6 +30,17 @@ export const formatPathSegmentLabel = (segment: string, locale?: string) => {
 
   if (!readable) return segment;
 
+  const SEGMENT_LABELS: Record<string, string> = {
+    about: "关于",
+    posts: "文章",
+    tags: "标签",
+    archives: "归档",
+    galleries: "相册",
+    search: "搜索",
+  };
+  const known = SEGMENT_LABELS[readable.toLowerCase()];
+  if (known) return known;
+
   return readable.charAt(0).toLocaleUpperCase(locale) + readable.slice(1);
 };
 
