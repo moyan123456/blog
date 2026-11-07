@@ -35,7 +35,7 @@ export const SITE = {
   lang: "zh-CN", // html lang code. Set this empty and default will be "en"
   timezone: "Asia/Shanghai", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   introAudio: {
-    enabled: true, // show/hide intro player in home and compact player while navigating
+    enabled: false, // show/hide intro player in home and compact player while navigating
     // src: path to file (relative to /public or absolute URL). Example: "/intro.mp3" or "https://example.com/stream"
     src: "https://fluxfm.streamabc.net/flx-chillhop-mp3-128-8581707",
     // src: "/audio/intro-web.mp3",
