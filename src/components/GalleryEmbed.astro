@@ -8,7 +8,7 @@
  * Props:
  *   slug      — name of the folder in src/data/galleries/ (required)
  *   limit     — maximum number of images to show (default: 6; 0 = all)
- *   showLink  — show "View full gallery" link (default: true)
+ *   showLink  — show "查看完整相册" link (default: true)
  *   cols      — grid columns: 2 | 3 | 4 (default: 3)
  */
 import type { ImageMetadata } from "astro";
@@ -147,7 +147,7 @@ const gridClass = {
           ))}
         </ul>
       ) : (
-        <p class="ge-empty">This gallery doesn't have any images yet.</p>
+        <p class="ge-empty">这个相册还没有图片。</p>
       )}
 
       {/* Footer: description + link to full gallery */}
@@ -157,7 +157,7 @@ const gridClass = {
         )}
         {showLink && (
           <a href={`/galleries/${slug}`} class="ge-link">
-            View full gallery
+            查看完整相册
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="14"
@@ -189,13 +189,13 @@ const gridClass = {
   <div class="lightbox-layout">
     <div class="lightbox-topbar">
       <span id={`${lbId}-counter`} class="lightbox-counter font-firacode"></span>
-      <button class="lightbox-btn" data-lb-close={lbId} aria-label="Close" title="Close (Esc)" type="button">
+      <button class="lightbox-btn" data-lb-close={lbId} aria-label="关闭" title="关闭 (Esc)" type="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
     </div>
 
     <div class="lightbox-main">
-      <button class="lightbox-btn lightbox-nav ge-lb-prev" data-lb-prev={lbId} aria-label="Previous" title="Previous (Left Arrow)" type="button">
+      <button class="lightbox-btn lightbox-nav ge-lb-prev" data-lb-prev={lbId} aria-label="上一张" title="上一张 (←)" type="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
       </button>
       
@@ -204,7 +204,7 @@ const gridClass = {
         <p id={`${lbId}-caption`} class="lightbox-caption text-foreground/80"></p>
       </div>
 
-      <button class="lightbox-btn lightbox-nav ge-lb-next" data-lb-next={lbId} aria-label="Next" title="Next (Right Arrow)" type="button">
+      <button class="lightbox-btn lightbox-nav ge-lb-next" data-lb-next={lbId} aria-label="下一张" title="下一张 (→)" type="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </button>
     </div>

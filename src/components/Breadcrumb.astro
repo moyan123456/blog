@@ -14,7 +14,7 @@ const breadcrumbs = buildBreadcrumbItems(Astro.url.pathname, {
   compactNumericPagination: true,
 });
 
-const currentPageLabel = breadcrumbs.at(-1)?.label ?? "Home";
+const currentPageLabel = breadcrumbs.at(-1)?.label ?? "首页";
 ---
 
 <nav
@@ -27,11 +27,11 @@ const currentPageLabel = breadcrumbs.at(-1)?.label ?? "Home";
         id="back-button"
         href="/"
         class="breadcrumb-bar back-btn group flex-shrink-0 !gap-2 text-foreground/60 transition-colors duration-200 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/45 focus-visible:ring-offset-2 focus-visible:ring-offset-background font-firacode text-sm"
-        aria-label={`Go back to the previous page. Current context: ${currentPageLabel}`}
+        aria-label={`返回上一页，当前位置：${currentPageLabel}`}
       >
         <IconChevronLeft class="size-4 opacity-70 transition-transform duration-200 group-hover:-translate-x-0.5 rtl:rotate-180 rtl:group-hover:translate-x-0.5" />
         <span aria-hidden="true" class="tracking-wide">cd ..</span>
-        <span class="visually-hidden">Go back</span>
+        <span class="visually-hidden">返回</span>
       </a>
     )}
 
@@ -47,11 +47,11 @@ const currentPageLabel = breadcrumbs.at(-1)?.label ?? "Home";
         <a
           href="/"
           class:list={["breadcrumb-home", { "breadcrumb-link-soft": withBackButton }]}
-          aria-label="Home"
-          title="Home"
+          aria-label="首页"
+          title="首页"
         >
           <span aria-hidden="true">~</span>
-          <span class="visually-hidden">Home</span>
+          <span class="visually-hidden">首页</span>
         </a>
       </li>
     {

@@ -21,7 +21,7 @@ const backUrl = SITE.showBackButton ? `${Astro.url.pathname}` : "/";
       <div class="aurora-mouse" data-search-mouse></div>
       <div class="relative z-10">
         <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">
-          <span class="glow-text">Search</span>
+          <span class="glow-text">搜索</span>
         </h1>
         <p class="mt-3 max-w-lg text-foreground/70 italic">
           Find any article, tutorial, or idea on the blog.
@@ -137,7 +137,7 @@ const backUrl = SITE.showBackButton ? `${Astro.url.pathname}` : "/";
       if (import.meta.env.DEV) {
         pageFindSearch.innerHTML = `
             <div class="bg-muted/75 rounded p-4 space-y-4 mb-4">
-              <p><strong>DEV mode Warning! </strong>You need to build the project at least once to see the search results during development.</p>
+              <p><strong>开发模式提示：</strong>开发环境下需要至少构建一次才能看到搜索结果。</p>
               <code class="block bg-black text-white px-2 py-1 rounded">pnpm run build</code>
             </div>
           `;

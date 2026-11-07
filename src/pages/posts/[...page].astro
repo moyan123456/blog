@@ -52,7 +52,7 @@ const nextURL = page.url.next ? new URL(page.url.next, SITE.website).toString() 
       <div class="aurora-mouse" data-posts-mouse></div>
       <div class="relative z-10">
         <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">
-          <span class="glow-text">Posts</span>
+          <span class="glow-text">文章</span>
         </h1>
         <p class="mt-3 max-w-lg text-foreground/70 italic">
           All the articles I have published.
@@ -97,7 +97,7 @@ const nextURL = page.url.next ? new URL(page.url.next, SITE.website).toString() 
                 <line x1="9" y1="15" x2="15" y2="15"></line>
               </svg>
             </div>
-            <h3 class="empty-title">No posts yet</h3>
+            <h3 class="empty-title">还没有文章</h3>
             <p class="empty-desc">
               Come back later to read our upcoming articles.
             </p>
@@ -167,7 +167,7 @@ const nextURL = page.url.next ? new URL(page.url.next, SITE.website).toString() 
       if (import.meta.env.DEV) {
         container.innerHTML = `
           <div class="bg-muted/75 rounded p-4 text-sm mb-4 border border-border">
-            <p><strong>Dev Mode:</strong> The search will attempt to use the latest built index. If you don't see results, run <code>pnpm run build</code> first.</p>
+            <p><strong>开发模式：</strong>搜索会使用最近一次构建的索引，如果没有结果，请先运行 <code>pnpm run build</code>。</p>
           </div>
         `;
         // Removed the early return to allow pagefind to attempt loading the local index

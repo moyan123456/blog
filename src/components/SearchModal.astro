@@ -13,7 +13,7 @@ import "@pagefind/default-ui/css/ui.css";
   class="search-modal-overlay"
   role="dialog"
   aria-modal="true"
-  aria-label="Search the site"
+  aria-label="搜索站内内容"
 >
   <div class="search-modal-backdrop" data-search-close></div>
   <div class="search-modal-container" data-modal-card>
@@ -53,19 +53,19 @@ import "@pagefind/default-ui/css/ui.css";
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
         </span>
-        <span class="search-title-text">Search</span>
+        <span class="search-title-text">搜索</span>
       </div>
       <div class="search-modal-shortcuts">
         <kbd class="kbd-key">⌘</kbd>
         <kbd class="kbd-key">K</kbd>
         <span class="shortcuts-sep">·</span>
         <kbd class="kbd-key">esc</kbd>
-        <span class="shortcuts-label">close</span>
+        <span class="shortcuts-label">关闭</span>
       </div>
       <button
         class="search-modal-close"
         data-search-close
-        aria-label="Close search"
+        aria-label="关闭搜索"
       >
         <svg
           class="size-4"
@@ -116,7 +116,7 @@ import "@pagefind/default-ui/css/ui.css";
         <span class="footer-icon">↑↓</span> navigate
       </div>
       <div class="footer-powered">
-        powered by <strong>pagefind</strong>
+        由 <strong>pagefind</strong> 提供支持
       </div>
     </div>
   </div>
@@ -235,7 +235,7 @@ import "@pagefind/default-ui/css/ui.css";
       if (import.meta.env.DEV) {
         container.innerHTML = `
           <div class="bg-muted/75 rounded-lg p-4 space-y-3 border border-accent/10">
-            <p class="text-sm"><strong>⚠ DEV mode</strong> — Build the project first to enable search.</p>
+            <p class="text-sm"><strong>⚠ 开发模式</strong> —— 请先构建项目再使用搜索。</p>
             <code class="block bg-black text-white text-xs px-3 py-2 rounded-lg font-mono">pnpm run build</code>
           </div>`;
       }

@@ -34,7 +34,7 @@ const isActive = (path: string) => {
             style="--i:0"
           >
             <span class="mobile-nav-indicator"></span>
-            <span>Posts</span>
+            <span>文章</span>
           </a>
           <a
             href="/tags"
@@ -42,7 +42,7 @@ const isActive = (path: string) => {
             style="--i:1"
           >
             <span class="mobile-nav-indicator"></span>
-            <span>Tags</span>
+            <span>标签</span>
           </a>
           <a
             href="/about"
@@ -50,7 +50,7 @@ const isActive = (path: string) => {
             style="--i:2"
           >
             <span class="mobile-nav-indicator"></span>
-            <span>About</span>
+            <span>关于</span>
           </a>
           {
             SITE.showArchives && (
@@ -63,7 +63,7 @@ const isActive = (path: string) => {
                 style="--i:3"
               >
                 <span class="mobile-nav-indicator" />
-                <span>Archives</span>
+                <span>归档</span>
               </a>
             )
           }
@@ -78,7 +78,7 @@ const isActive = (path: string) => {
                 style="--i:4"
               >
                 <span class="mobile-nav-indicator" />
-                <span>Galleries</span>
+                <span>相册</span>
               </a>
             )
           }
@@ -92,25 +92,25 @@ const isActive = (path: string) => {
           <button
             data-search-trigger
             class="mobile-action-btn flex-1 justify-center"
-            title="Search (⌘K)"
-            aria-label="Open search"
+            title="搜索 (⌘K)"
+            aria-label="打开搜索"
           >
             <IconSearch class="size-4" />
-            <span>Search</span>
+            <span>搜索</span>
           </button>
           {
             SITE.lightAndDarkMode && (
               <button
                 id="theme-btn-mobile"
                 class="mobile-action-btn flex-1 justify-center"
-                title="Toggle theme"
-                aria-label="auto"
+                title="切换主题"
+                aria-label="自动"
                 aria-live="polite"
               >
                 <IconMoon class="block size-4 dark:hidden" />
                 <IconSunHigh class="hidden size-4 dark:block" />
-                <span class="block dark:hidden">Dark mode</span>
-                <span class="hidden dark:block">Light mode</span>
+                <span class="block dark:hidden">深色模式</span>
+                <span class="hidden dark:block">浅色模式</span>
               </button>
             )
           }

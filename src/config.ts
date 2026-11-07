@@ -18,7 +18,7 @@ export const SITE = {
   indexPostsGrid: false, // show recent/featured posts in grid layout on the home page (like /posts page)
   heroTerminalPrompt: {
     prefix: "~", // highlighted part on the left
-    path: "/ready-to-go", // central prompt text
+    path: "/moyan", // central prompt text
     suffix: "$", // terminal symbol on the right
   },
   backdropEffects: {
@@ -27,12 +27,12 @@ export const SITE = {
   },
   editPost: {
     enabled: true,
-    text: "Edit this post",
+    text: "编辑本文",
     url: process.env.PUBLIC_EDIT_POST_URL ?? "", // set in .env
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
-  lang: "en", // html lang code. Set this empty and default will be "en"
+  lang: "zh-CN", // html lang code. Set this empty and default will be "en"
   timezone: "Asia/Shanghai", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   introAudio: {
     enabled: true, // show/hide intro player in home and compact player while navigating

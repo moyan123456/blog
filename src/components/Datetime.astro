@@ -2,6 +2,7 @@
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
+import "dayjs/locale/zh-cn";
 import IconCalendar from "@/assets/icons/IconCalendar.svg";
 import { SITE } from "@/config";
 
@@ -40,7 +41,7 @@ const isModified = Boolean(
 
 const datetime = isModified && modifiedDatetime ? modifiedDatetime : publishedDatetime;
 
-const date = datetime.locale(localeCode).format("D MMM, YYYY");
+const date = datetime.locale(localeCode).format(localeCode === "zh" ? "YYYY年M月D日" : "D MMM, YYYY");
 
 const srDate = new Intl.DateTimeFormat(locale, {
   dateStyle: "long",

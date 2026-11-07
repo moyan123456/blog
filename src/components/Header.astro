@@ -29,7 +29,7 @@ const isActive = (path: string) => {
   href="#main-content"
   class="absolute start-16 -top-full z-50 rounded-b-lg bg-accent px-4 py-2 font-medium text-background transition-all focus:top-0"
 >
-  Skip to content
+  跳到主要内容
 </a>
 
 <header id="main-header" class="sticky top-0 z-40 w-full transition-colors duration-300">
@@ -50,7 +50,8 @@ const isActive = (path: string) => {
           class="group relative z-20 flex items-center gap-2 text-xl font-bold tracking-tight sm:text-2xl shrink-0"
         >
           <!-- <span class="nav-logo-text">{SITE.title}</span> -->
-          <Logo class="w-37.5 dark:invert" />
+          <Logo class="w-18 dark:invert" />
+          <span class="nav-logo-text">MoYan</span>
         </a>
 
         <!-- Center Audio Player -->
@@ -74,7 +75,7 @@ const isActive = (path: string) => {
           <button
             id="menu-btn"
             class="hamburger-btn sm:hidden"
-            aria-label="Open Menu"
+            aria-label="打开菜单"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
@@ -91,28 +92,28 @@ const isActive = (path: string) => {
               <a
                 href="/posts"
                 class:list={["nav-link", { "nav-active": isActive("/posts") }]}
-                >Posts</a
+                >文章</a
               >
             </li>
             <li>
               <a
                 href="/tags"
                 class:list={["nav-link", { "nav-active": isActive("/tags") }]}
-                >Tags</a
+                >标签</a
               >
             </li>
             <li>
               <a
                 href="/about"
                 class:list={["nav-link", { "nav-active": isActive("/about") }]}
-                >About</a
+                >关于</a
               >
             </li>
             <li class="flex items-center">
               <a
                 href="/search"
                 class:list={["nav-link", { "nav-active": isActive("/search") }]}
-                title="Go to Search">Search</a
+                title="前往搜索">搜索</a
               >
             </li>
             {
@@ -124,11 +125,11 @@ const isActive = (path: string) => {
                       "nav-link",
                       { "nav-active": isActive("/archives") },
                     ]}
-                    title="Archives"
-                    aria-label="archives"
+                    title="归档"
+                    aria-label="归档"
                   >
                     <IconArchive class="hidden sm:inline-block" />
-                    <span class="sm:sr-only">Archives</span>
+                    <span class="sm:sr-only">归档</span>
                   </LinkButton>
                 </li>
               )
@@ -142,11 +143,11 @@ const isActive = (path: string) => {
                       "nav-link",
                       { "nav-active": isActive("/galleries") },
                     ]}
-                    title="Galleries"
-                    aria-label="galleries"
+                    title="相册"
+                    aria-label="相册"
                   >
                     <IconGallery class="hidden sm:inline-block" />
-                    <span class="sm:sr-only">Galleries</span>
+                    <span class="sm:sr-only">相册</span>
                   </LinkButton>
                 </li>
               )
@@ -161,8 +162,8 @@ const isActive = (path: string) => {
               <button
                 data-search-trigger
                 class="nav-search-btn"
-                title="Search (⌘K)"
-                aria-label="Open search"
+                title="搜索 (⌘K)"
+                aria-label="打开搜索"
                 aria-keyshortcuts="Meta+K"
               >
                 <IconSearch class="size-4.5" />
@@ -175,8 +176,8 @@ const isActive = (path: string) => {
                   <button
                     id="theme-btn"
                     class="nav-icon-btn relative"
-                    title="Toggles light & dark"
-                    aria-label="auto"
+                    title="切换明暗主题"
+                    aria-label="自动"
                     aria-live="polite"
                   >
                     <IconMoon class="absolute top-1/2 left-1/2 -translate-1/2 scale-100 rotate-0 transition-all duration-300 dark:scale-0 dark:-rotate-90" />
@@ -523,7 +524,7 @@ const isActive = (path: string) => {
           closeMenu();
         } else {
           menuBtn.setAttribute("aria-expanded", "true");
-          menuBtn.setAttribute("aria-label", "Close Menu");
+          menuBtn.setAttribute("aria-label", "关闭菜单");
           mobileMenu.classList.add("is-open");
           mobileMenu.setAttribute("aria-hidden", "false");
         }
